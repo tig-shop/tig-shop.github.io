@@ -1,0 +1,1604 @@
+/*============    Шрифты    ===========*/
+@font-face {
+  font-family: 'PO';
+  src: url('../fonts/Postmodern One.eot') format('embedded-opentype');
+  src: url('/fonts/PostmodernOne.ttf') format('truetype'), url('../fonts/Postmodern One.woff2') format('woff2'), url('../fonts/PostmodernOne.svg') format('svg'), url('../fonts/PostmodernOne.woff') format('woff');
+}
+@font-face {
+  font-family: 'pfdintextcompprobold';
+  src: url('fonts/pfdintextcompprobold.eot');
+  src: url('fonts/pfdintextcompprobold.eot') format('embedded-opentype'), url('fonts/pfdintextcompprobold.woff2') format('woff2'), url('fonts/pfdintextcompprobold.woff') format('woff'), url('fonts/pfdintextcompprobold.ttf') format('truetype'), url('fonts/pfdintextcompprobold.svg#pfdintextcompprobold') format('svg');
+}
+@font-face {
+  font-family: 'pfdintextcompprolight';
+  src: url('fonts/pfdintextcompprolight.eot');
+  src: url('fonts/pfdintextcompprolight.eot') format('embedded-opentype'), url('fonts/pfdintextcompprolight.woff2') format('woff2'), url('fonts/pfdintextcompprolight.woff') format('woff'), url('fonts/pfdintextcompprolight.ttf') format('truetype'), url('fonts/pfdintextcompprolight.svg#pfdintextcompprolight') format('svg');
+}
+@font-face {
+  font-family: 'pfdintextcomppromedium';
+  src: url('fonts/pfdintextcomppromedium.eot');
+  src: url('fonts/pfdintextcomppromedium.eot') format('embedded-opentype'), url('fonts/pfdintextcomppromedium.woff2') format('woff2'), url('fonts/pfdintextcomppromedium.woff') format('woff'), url('fonts/pfdintextcomppromedium.ttf') format('truetype'), url('fonts/pfdintextcomppromedium.svg#pfdintextcomppromedium') format('svg');
+}
+.bold {
+  font-family: "pfdintextcompprobold";
+}
+.med {
+  font-family: "pfdintextcomppromedium";
+}
+.light {
+  font-family: "pfdintextcompprolight";
+}
+a:hover,
+a:focus,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+/*============    ШАПКА    ===========*/
+.main-head {
+  margin: 0px;
+  padding: 0px;
+  height: 150px;
+}
+.main-logo img {
+  height: 100px;
+  width: 100px;
+  margin-top: 20px;
+}
+.main-logo p {
+  text-transform: uppercase;
+  font-family: "PO";
+  margin-left: 10px;
+  margin-top: -15px;
+  font-size: 20px;
+}
+.main-name {
+  right: 25px;
+}
+.main-name h1 {
+  font-family: "pfdintextcompprobold";
+  text-align: center;
+  font-size: 40px;
+  color: #212529;
+  margin-top: 30px;
+  line-height: 30px;
+}
+.main-name p {
+  font-family: "pfdintextcompprobold";
+  text-align: center;
+  font-size: 15px;
+  color: #444444;
+}
+.main-name span {
+  font-family: "pfdintextcompprolight";
+  color: #f48942;
+  text-align: center;
+}
+.main-tel p {
+  color: #f48942;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 12px;
+  font-family: sans-serif;
+  line-height: 20px;
+  margin-bottom: 10px;
+  margin-left: 40px;
+}
+.main-tel a {
+  font-size: 20px;
+  color: #000;
+  font-family: "pfdintextcomppromedium";
+}
+.main-tel a:hover {
+  text-decoration: none;
+}
+.main-tel a:before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  vertical-align: -15%;
+  margin-right: 3px;
+  margin-bottom: 3px;
+  background: url(../img/phone.png) no-repeat center center;
+  display: inline-block;
+}
+.main-time p {
+  font-family: "pfdintextcompprolight";
+  margin-top: -7px;
+  text-transform: none;
+  text-align: center;
+  color: #707070;
+  line-height: 18px;
+  font-size: 14px;
+  margin-left: 40px;
+}
+/*============    МЕНЮ   ===========*/
+.nav {
+  padding-left: 20px;
+}
+.nav-menu {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background-color: #f48942;
+  height: 35px;
+}
+.nav li a {
+  text-align: center;
+  margin-bottom: 5px;
+  font-family: "pfdintextcomppromedium";
+  font-size: 20px;
+  color: #000;
+  line-height: 20px;
+  display: block;
+  padding: 6px 6px 6px 6px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+}
+.nav li a:hover {
+  text-decoration: none;
+  background-color: #444444;
+  color: #fff;
+  height: 35px;
+}
+.nav-dropmenu li a {
+  height: 30px;
+  width: 165px;
+  font-family: "pfdintextcomppromedium";
+  font-size: 18px;
+  color: #000;
+  line-height: 15px;
+  display: block;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  background-color: #f48942;
+  margin-bottom: 2px;
+  transform: translate3d(0px, -6px, 0px);
+}
+.nav-dropmenu li a:hover {
+  text-decoration: none;
+  background-color: #444444;
+  color: #fff;
+  height: 30px;
+  display: block;
+}
+.dropdown-menu {
+  border: none;
+  background-color: transparent;
+}
+.nav-menu > li:hover .nav-dropmenu {
+  display: block;
+}
+/*============   КАРТИНКА    ===========*/
+section#main_img {
+  background: url(../img/555.jpg) no-repeat center center;
+  background-size: cover;
+  margin-top: 5px;
+  height: 550px;
+}
+.main_fon h2 {
+  padding: 12px;
+  margin-top: 120px;
+  margin-left: 60%;
+  text-align: center;
+  border: 1px solid none;
+  -webkit-border-radius: 50px 10px;
+  border-radius: 50px 10px;
+  background-color: #444444;
+  color: #fff;
+}
+.main_fon h2 span {
+  font-family: "pfdintextcompprobold";
+  font-size: 35px;
+  text-transform: uppercase;
+}
+.button {
+  margin-top: 80px;
+  margin-left: 60%;
+  text-align: center;
+}
+.button a {
+  color: #444444;
+  font-family: "pfdintextcompprobold";
+  font-size: 25px;
+  text-transform: uppercase;
+}
+.btn-group-lg {
+  text-align: center;
+  text-decoration: none;
+}
+.btn {
+  border-radius: 80px;
+  border: solid 2px #f48942;
+  background-color: #FDF4EC;
+  line-height: 30px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #f48942;
+}
+.btn:hover a {
+  color: #fff;
+}
+/*============    singlet    ===========*/
+#singlet .singlet,
+#dresses .singlet,
+#cardigan .singlet,
+#sweaters .singlet,
+#shirts .singlet,
+#news .singlet,
+#jacket .singlet,
+#singlet .dresses,
+#dresses .dresses,
+#cardigan .dresses,
+#sweaters .dresses,
+#shirts .dresses,
+#news .dresses,
+#jacket .dresses,
+#singlet .cardigan,
+#dresses .cardigan,
+#cardigan .cardigan,
+#sweaters .cardigan,
+#shirts .cardigan,
+#news .cardigan,
+#jacket .cardigan,
+#singlet .sweaters,
+#dresses .sweaters,
+#cardigan .sweaters,
+#sweaters .sweaters,
+#shirts .sweaters,
+#news .sweaters,
+#jacket .sweaters,
+#singlet .shirts,
+#dresses .shirts,
+#cardigan .shirts,
+#sweaters .shirts,
+#shirts .shirts,
+#news .shirts,
+#jacket .shirts,
+#singlet .news,
+#dresses .news,
+#cardigan .news,
+#sweaters .news,
+#shirts .news,
+#news .news,
+#jacket .news,
+#singlet .jacket,
+#dresses .jacket,
+#cardigan .jacket,
+#sweaters .jacket,
+#shirts .jacket,
+#news .jacket,
+#jacket .jacket {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+#singlet .singlet h3,
+#dresses .singlet h3,
+#cardigan .singlet h3,
+#sweaters .singlet h3,
+#shirts .singlet h3,
+#news .singlet h3,
+#jacket .singlet h3,
+#singlet .dresses h3,
+#dresses .dresses h3,
+#cardigan .dresses h3,
+#sweaters .dresses h3,
+#shirts .dresses h3,
+#news .dresses h3,
+#jacket .dresses h3,
+#singlet .cardigan h3,
+#dresses .cardigan h3,
+#cardigan .cardigan h3,
+#sweaters .cardigan h3,
+#shirts .cardigan h3,
+#news .cardigan h3,
+#jacket .cardigan h3,
+#singlet .sweaters h3,
+#dresses .sweaters h3,
+#cardigan .sweaters h3,
+#sweaters .sweaters h3,
+#shirts .sweaters h3,
+#news .sweaters h3,
+#jacket .sweaters h3,
+#singlet .shirts h3,
+#dresses .shirts h3,
+#cardigan .shirts h3,
+#sweaters .shirts h3,
+#shirts .shirts h3,
+#news .shirts h3,
+#jacket .shirts h3,
+#singlet .news h3,
+#dresses .news h3,
+#cardigan .news h3,
+#sweaters .news h3,
+#shirts .news h3,
+#news .news h3,
+#jacket .news h3,
+#singlet .jacket h3,
+#dresses .jacket h3,
+#cardigan .jacket h3,
+#sweaters .jacket h3,
+#shirts .jacket h3,
+#news .jacket h3,
+#jacket .jacket h3 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #444444;
+  font-family: "pfdintextcomppromedium";
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+#singlet .singlet hr,
+#dresses .singlet hr,
+#cardigan .singlet hr,
+#sweaters .singlet hr,
+#shirts .singlet hr,
+#news .singlet hr,
+#jacket .singlet hr,
+#singlet .dresses hr,
+#dresses .dresses hr,
+#cardigan .dresses hr,
+#sweaters .dresses hr,
+#shirts .dresses hr,
+#news .dresses hr,
+#jacket .dresses hr,
+#singlet .cardigan hr,
+#dresses .cardigan hr,
+#cardigan .cardigan hr,
+#sweaters .cardigan hr,
+#shirts .cardigan hr,
+#news .cardigan hr,
+#jacket .cardigan hr,
+#singlet .sweaters hr,
+#dresses .sweaters hr,
+#cardigan .sweaters hr,
+#sweaters .sweaters hr,
+#shirts .sweaters hr,
+#news .sweaters hr,
+#jacket .sweaters hr,
+#singlet .shirts hr,
+#dresses .shirts hr,
+#cardigan .shirts hr,
+#sweaters .shirts hr,
+#shirts .shirts hr,
+#news .shirts hr,
+#jacket .shirts hr,
+#singlet .news hr,
+#dresses .news hr,
+#cardigan .news hr,
+#sweaters .news hr,
+#shirts .news hr,
+#news .news hr,
+#jacket .news hr,
+#singlet .jacket hr,
+#dresses .jacket hr,
+#cardigan .jacket hr,
+#sweaters .jacket hr,
+#shirts .jacket hr,
+#news .jacket hr,
+#jacket .jacket hr {
+  display: inline-block;
+  border: none;
+  height: 1px;
+  color: #f48942;
+  background-color: #f48942;
+  width: 40%;
+  margin-top: 18px;
+}
+#singlet .singlet-img,
+#dresses .singlet-img,
+#cardigan .singlet-img,
+#sweaters .singlet-img,
+#shirts .singlet-img,
+#news .singlet-img,
+#jacket .singlet-img,
+#singlet .dresses-img,
+#dresses .dresses-img,
+#cardigan .dresses-img,
+#sweaters .dresses-img,
+#shirts .dresses-img,
+#news .dresses-img,
+#jacket .dresses-img,
+#singlet .cardigan-img,
+#dresses .cardigan-img,
+#cardigan .cardigan-img,
+#sweaters .cardigan-img,
+#shirts .cardigan-img,
+#news .cardigan-img,
+#jacket .cardigan-img,
+#singlet .sweaters-img,
+#dresses .sweaters-img,
+#cardigan .sweaters-img,
+#sweaters .sweaters-img,
+#shirts .sweaters-img,
+#news .sweaters-img,
+#jacket .sweaters-img,
+#singlet .shirts-img,
+#dresses .shirts-img,
+#cardigan .shirts-img,
+#sweaters .shirts-img,
+#shirts .shirts-img,
+#news .shirts-img,
+#jacket .shirts-img,
+#singlet .news-img,
+#dresses .news-img,
+#cardigan .news-img,
+#sweaters .news-img,
+#shirts .news-img,
+#news .news-img,
+#jacket .news-img,
+#singlet .jacket-img,
+#dresses .jacket-img,
+#cardigan .jacket-img,
+#sweaters .jacket-img,
+#shirts .jacket-img,
+#news .jacket-img,
+#jacket .jacket-img {
+  margin-bottom: 15px;
+  text-align: center;
+  line-height: 20px;
+}
+#singlet .singlet-img figcaption,
+#dresses .singlet-img figcaption,
+#cardigan .singlet-img figcaption,
+#sweaters .singlet-img figcaption,
+#shirts .singlet-img figcaption,
+#news .singlet-img figcaption,
+#jacket .singlet-img figcaption,
+#singlet .dresses-img figcaption,
+#dresses .dresses-img figcaption,
+#cardigan .dresses-img figcaption,
+#sweaters .dresses-img figcaption,
+#shirts .dresses-img figcaption,
+#news .dresses-img figcaption,
+#jacket .dresses-img figcaption,
+#singlet .cardigan-img figcaption,
+#dresses .cardigan-img figcaption,
+#cardigan .cardigan-img figcaption,
+#sweaters .cardigan-img figcaption,
+#shirts .cardigan-img figcaption,
+#news .cardigan-img figcaption,
+#jacket .cardigan-img figcaption,
+#singlet .sweaters-img figcaption,
+#dresses .sweaters-img figcaption,
+#cardigan .sweaters-img figcaption,
+#sweaters .sweaters-img figcaption,
+#shirts .sweaters-img figcaption,
+#news .sweaters-img figcaption,
+#jacket .sweaters-img figcaption,
+#singlet .shirts-img figcaption,
+#dresses .shirts-img figcaption,
+#cardigan .shirts-img figcaption,
+#sweaters .shirts-img figcaption,
+#shirts .shirts-img figcaption,
+#news .shirts-img figcaption,
+#jacket .shirts-img figcaption,
+#singlet .news-img figcaption,
+#dresses .news-img figcaption,
+#cardigan .news-img figcaption,
+#sweaters .news-img figcaption,
+#shirts .news-img figcaption,
+#news .news-img figcaption,
+#jacket .news-img figcaption,
+#singlet .jacket-img figcaption,
+#dresses .jacket-img figcaption,
+#cardigan .jacket-img figcaption,
+#sweaters .jacket-img figcaption,
+#shirts .jacket-img figcaption,
+#news .jacket-img figcaption,
+#jacket .jacket-img figcaption {
+  margin-top: 5px;
+  font-family: "pfdintextcompprobold";
+  color: #444444;
+  font-size: 20px;
+  text-align: center;
+}
+#singlet .singlet-img figcaption span,
+#dresses .singlet-img figcaption span,
+#cardigan .singlet-img figcaption span,
+#sweaters .singlet-img figcaption span,
+#shirts .singlet-img figcaption span,
+#news .singlet-img figcaption span,
+#jacket .singlet-img figcaption span,
+#singlet .dresses-img figcaption span,
+#dresses .dresses-img figcaption span,
+#cardigan .dresses-img figcaption span,
+#sweaters .dresses-img figcaption span,
+#shirts .dresses-img figcaption span,
+#news .dresses-img figcaption span,
+#jacket .dresses-img figcaption span,
+#singlet .cardigan-img figcaption span,
+#dresses .cardigan-img figcaption span,
+#cardigan .cardigan-img figcaption span,
+#sweaters .cardigan-img figcaption span,
+#shirts .cardigan-img figcaption span,
+#news .cardigan-img figcaption span,
+#jacket .cardigan-img figcaption span,
+#singlet .sweaters-img figcaption span,
+#dresses .sweaters-img figcaption span,
+#cardigan .sweaters-img figcaption span,
+#sweaters .sweaters-img figcaption span,
+#shirts .sweaters-img figcaption span,
+#news .sweaters-img figcaption span,
+#jacket .sweaters-img figcaption span,
+#singlet .shirts-img figcaption span,
+#dresses .shirts-img figcaption span,
+#cardigan .shirts-img figcaption span,
+#sweaters .shirts-img figcaption span,
+#shirts .shirts-img figcaption span,
+#news .shirts-img figcaption span,
+#jacket .shirts-img figcaption span,
+#singlet .news-img figcaption span,
+#dresses .news-img figcaption span,
+#cardigan .news-img figcaption span,
+#sweaters .news-img figcaption span,
+#shirts .news-img figcaption span,
+#news .news-img figcaption span,
+#jacket .news-img figcaption span,
+#singlet .jacket-img figcaption span,
+#dresses .jacket-img figcaption span,
+#cardigan .jacket-img figcaption span,
+#sweaters .jacket-img figcaption span,
+#shirts .jacket-img figcaption span,
+#news .jacket-img figcaption span,
+#jacket .jacket-img figcaption span {
+  font-size: 18px;
+  font-weight: bold;
+}
+#singlet .singlet-img p,
+#dresses .singlet-img p,
+#cardigan .singlet-img p,
+#sweaters .singlet-img p,
+#shirts .singlet-img p,
+#news .singlet-img p,
+#jacket .singlet-img p,
+#singlet .dresses-img p,
+#dresses .dresses-img p,
+#cardigan .dresses-img p,
+#sweaters .dresses-img p,
+#shirts .dresses-img p,
+#news .dresses-img p,
+#jacket .dresses-img p,
+#singlet .cardigan-img p,
+#dresses .cardigan-img p,
+#cardigan .cardigan-img p,
+#sweaters .cardigan-img p,
+#shirts .cardigan-img p,
+#news .cardigan-img p,
+#jacket .cardigan-img p,
+#singlet .sweaters-img p,
+#dresses .sweaters-img p,
+#cardigan .sweaters-img p,
+#sweaters .sweaters-img p,
+#shirts .sweaters-img p,
+#news .sweaters-img p,
+#jacket .sweaters-img p,
+#singlet .shirts-img p,
+#dresses .shirts-img p,
+#cardigan .shirts-img p,
+#sweaters .shirts-img p,
+#shirts .shirts-img p,
+#news .shirts-img p,
+#jacket .shirts-img p,
+#singlet .news-img p,
+#dresses .news-img p,
+#cardigan .news-img p,
+#sweaters .news-img p,
+#shirts .news-img p,
+#news .news-img p,
+#jacket .news-img p,
+#singlet .jacket-img p,
+#dresses .jacket-img p,
+#cardigan .jacket-img p,
+#sweaters .jacket-img p,
+#shirts .jacket-img p,
+#news .jacket-img p,
+#jacket .jacket-img p {
+  margin-bottom: 10px;
+  margin-top: -15px;
+  font-family: "pfdintextcompprobold";
+  color: #444444;
+  font-size: 20px;
+  text-align: center;
+}
+#singlet .singlet-img p span,
+#dresses .singlet-img p span,
+#cardigan .singlet-img p span,
+#sweaters .singlet-img p span,
+#shirts .singlet-img p span,
+#news .singlet-img p span,
+#jacket .singlet-img p span,
+#singlet .dresses-img p span,
+#dresses .dresses-img p span,
+#cardigan .dresses-img p span,
+#sweaters .dresses-img p span,
+#shirts .dresses-img p span,
+#news .dresses-img p span,
+#jacket .dresses-img p span,
+#singlet .cardigan-img p span,
+#dresses .cardigan-img p span,
+#cardigan .cardigan-img p span,
+#sweaters .cardigan-img p span,
+#shirts .cardigan-img p span,
+#news .cardigan-img p span,
+#jacket .cardigan-img p span,
+#singlet .sweaters-img p span,
+#dresses .sweaters-img p span,
+#cardigan .sweaters-img p span,
+#sweaters .sweaters-img p span,
+#shirts .sweaters-img p span,
+#news .sweaters-img p span,
+#jacket .sweaters-img p span,
+#singlet .shirts-img p span,
+#dresses .shirts-img p span,
+#cardigan .shirts-img p span,
+#sweaters .shirts-img p span,
+#shirts .shirts-img p span,
+#news .shirts-img p span,
+#jacket .shirts-img p span,
+#singlet .news-img p span,
+#dresses .news-img p span,
+#cardigan .news-img p span,
+#sweaters .news-img p span,
+#shirts .news-img p span,
+#news .news-img p span,
+#jacket .news-img p span,
+#singlet .jacket-img p span,
+#dresses .jacket-img p span,
+#cardigan .jacket-img p span,
+#sweaters .jacket-img p span,
+#shirts .jacket-img p span,
+#news .jacket-img p span,
+#jacket .jacket-img p span {
+  font-size: 18px;
+  font-weight: bold;
+}
+#singlet .singlet-img img,
+#dresses .singlet-img img,
+#cardigan .singlet-img img,
+#sweaters .singlet-img img,
+#shirts .singlet-img img,
+#news .singlet-img img,
+#jacket .singlet-img img,
+#singlet .dresses-img img,
+#dresses .dresses-img img,
+#cardigan .dresses-img img,
+#sweaters .dresses-img img,
+#shirts .dresses-img img,
+#news .dresses-img img,
+#jacket .dresses-img img,
+#singlet .cardigan-img img,
+#dresses .cardigan-img img,
+#cardigan .cardigan-img img,
+#sweaters .cardigan-img img,
+#shirts .cardigan-img img,
+#news .cardigan-img img,
+#jacket .cardigan-img img,
+#singlet .sweaters-img img,
+#dresses .sweaters-img img,
+#cardigan .sweaters-img img,
+#sweaters .sweaters-img img,
+#shirts .sweaters-img img,
+#news .sweaters-img img,
+#jacket .sweaters-img img,
+#singlet .shirts-img img,
+#dresses .shirts-img img,
+#cardigan .shirts-img img,
+#sweaters .shirts-img img,
+#shirts .shirts-img img,
+#news .shirts-img img,
+#jacket .shirts-img img,
+#singlet .news-img img,
+#dresses .news-img img,
+#cardigan .news-img img,
+#sweaters .news-img img,
+#shirts .news-img img,
+#news .news-img img,
+#jacket .news-img img,
+#singlet .jacket-img img,
+#dresses .jacket-img img,
+#cardigan .jacket-img img,
+#sweaters .jacket-img img,
+#shirts .jacket-img img,
+#news .jacket-img img,
+#jacket .jacket-img img {
+  border: 1px solid #fff;
+}
+#singlet .singlet-img:hover img,
+#dresses .singlet-img:hover img,
+#cardigan .singlet-img:hover img,
+#sweaters .singlet-img:hover img,
+#shirts .singlet-img:hover img,
+#news .singlet-img:hover img,
+#jacket .singlet-img:hover img,
+#singlet .dresses-img:hover img,
+#dresses .dresses-img:hover img,
+#cardigan .dresses-img:hover img,
+#sweaters .dresses-img:hover img,
+#shirts .dresses-img:hover img,
+#news .dresses-img:hover img,
+#jacket .dresses-img:hover img,
+#singlet .cardigan-img:hover img,
+#dresses .cardigan-img:hover img,
+#cardigan .cardigan-img:hover img,
+#sweaters .cardigan-img:hover img,
+#shirts .cardigan-img:hover img,
+#news .cardigan-img:hover img,
+#jacket .cardigan-img:hover img,
+#singlet .sweaters-img:hover img,
+#dresses .sweaters-img:hover img,
+#cardigan .sweaters-img:hover img,
+#sweaters .sweaters-img:hover img,
+#shirts .sweaters-img:hover img,
+#news .sweaters-img:hover img,
+#jacket .sweaters-img:hover img,
+#singlet .shirts-img:hover img,
+#dresses .shirts-img:hover img,
+#cardigan .shirts-img:hover img,
+#sweaters .shirts-img:hover img,
+#shirts .shirts-img:hover img,
+#news .shirts-img:hover img,
+#jacket .shirts-img:hover img,
+#singlet .news-img:hover img,
+#dresses .news-img:hover img,
+#cardigan .news-img:hover img,
+#sweaters .news-img:hover img,
+#shirts .news-img:hover img,
+#news .news-img:hover img,
+#jacket .news-img:hover img,
+#singlet .jacket-img:hover img,
+#dresses .jacket-img:hover img,
+#cardigan .jacket-img:hover img,
+#sweaters .jacket-img:hover img,
+#shirts .jacket-img:hover img,
+#news .jacket-img:hover img,
+#jacket .jacket-img:hover img {
+  border: 1px solid #f48942;
+}
+#singlet .modal-body,
+#dresses .modal-body,
+#cardigan .modal-body,
+#sweaters .modal-body,
+#shirts .modal-body,
+#news .modal-body,
+#jacket .modal-body {
+  z-index: auto;
+}
+#singlet .modal-body img,
+#dresses .modal-body img,
+#cardigan .modal-body img,
+#sweaters .modal-body img,
+#shirts .modal-body img,
+#news .modal-body img,
+#jacket .modal-body img {
+  width: 100%;
+  height: 100%;
+}
+/*============    ПРИЕМУЩЕСТВА   ===========*/
+section#plus .pluss {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+section#plus .pluss h3 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #444444;
+  font-family: "pfdintextcomppromedium";
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+section#plus .pluss hr {
+  display: inline-block;
+  border: none;
+  height: 1px;
+  color: #f48942;
+  background-color: #f48942;
+  width: 40%;
+  margin-top: 18px;
+}
+.slider {
+  color: #444444;
+  height: 100%;
+  text-align: center;
+  padding: 20px;
+}
+.slider img {
+  display: inline;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+.slider p {
+  font-size: 16px;
+  text-align: center;
+  font-family: "pfdintextcomppromedium";
+  margin-top: 5px;
+  line-height: 20px;
+}
+.slider p.namefeed {
+  font-family: "pfdintextcomppromedium";
+  color: #444444;
+  line-height: 18px;
+  font-size: 12px;
+}
+.slider p.namefeed span {
+  font-family: "pfdintextcomppromedium";
+  font-size: 17px;
+  font-weight: bold;
+}
+.slick-active {
+  outline: none;
+}
+.slick-prev:before,
+.slick-next:before {
+  font-size: 25px;
+  color: #444444;
+}
+.slick-dots li button:before {
+  color: #F48942;
+  opacity: 0.5;
+}
+.slick-dots li.slick-active button:before {
+  color: #F48942;
+  opacity: 1;
+}
+/*============    КОНТАКТЫ   ===========*/
+footer {
+  background-color: #fff;
+}
+footer .namefooter {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+footer .namefooter h3 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #444444;
+  font-family: "pfdintextcomppromedium";
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+footer .namefooter hr {
+  display: inline-block;
+  border: none;
+  height: 1px;
+  color: #f48942;
+  background-color: #f48942;
+  width: 40%;
+  margin-top: 18px;
+}
+footer address {
+  color: #444444;
+  margin-top: 10px;
+}
+footer address p#address {
+  margin-bottom: 0px;
+  text-transform: uppercase;
+  font-family: "pfdintextcompprolight";
+}
+footer address p#address:before {
+  content: '';
+  width: 13px;
+  height: 13px;
+  background: url(../img/map.png) no-repeat center center;
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 3px;
+}
+footer address p#krd {
+  color: #444444;
+  font-size: 20px;
+  font-family: "pfdintextcompprolight";
+  margin-top: 0px;
+}
+footer p#phone_footer {
+  color: #444444;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+  font-family: "pfdintextcompprolight";
+}
+footer p#phone_footer:before {
+  content: '';
+  width: 13px;
+  height: 13px;
+  background: url(../img/tele.png) no-repeat center center;
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 3px;
+}
+footer p#number {
+  margin-top: 0px;
+  margin-bottom: 3px;
+  text-align: center;
+  color: #444444;
+  font-size: 20px;
+  font-family: "pfdintextcompprolight";
+}
+footer p#number a {
+  font-size: 20px;
+  color: #444444;
+  font-family: "pfdintextcomppromedium";
+}
+footer p#number a:hover {
+  text-decoration: none;
+}
+footer p#number a:before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  vertical-align: -15%;
+  margin-right: 3px;
+  margin-bottom: 3px;
+  background: url(../img/phone.png) no-repeat center center;
+  display: inline-block;
+}
+footer p#number2 {
+  margin-left: -28px;
+  text-align: center;
+  color: #444444;
+  font-size: 20px;
+  font-family: "pfdintextcompprolight";
+}
+footer p#number2 a {
+  font-size: 20px;
+  color: #444444;
+  font-family: "pfdintextcomppromedium";
+}
+footer p#number2 a:hover {
+  text-decoration: none;
+}
+footer p#number2 a:before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  vertical-align: -15%;
+  margin-right: 3px;
+  margin-bottom: 3px;
+  background: url(../img/phone.png) no-repeat center center;
+  display: inline-block;
+}
+.fon {
+  background-color: #444444;
+}
+.details,
+.namekrd,
+.tigran {
+  font-size: 15px;
+  font-family: "pfdintextcomppromedium";
+}
+.details p,
+.namekrd p,
+.tigran p {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: #FFF;
+}
+.details a,
+.namekrd a,
+.tigran a {
+  color: #f48942;
+}
+.tigran span {
+  font-family: "PO";
+}
+/*============    КАРТА    ===========*/
+.ymaps-2-1-56-map {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+/*============     НАВВЕРХ  ===========*/
+.b-top {
+  z-index: 2600;
+  position: fixed;
+  right: 0;
+  bottom: 90px;
+  width: 34%;
+  margin-right: 90%;
+}
+.b-top-but {
+  z-index: 2600;
+  position: absolute;
+  display: block;
+  right: 13%;
+  padding: 10px 5px;
+  color: #444444;
+  bottom: -70px;
+  opacity: 0.4;
+}
+.fa-arrow-up {
+  background: #f48942;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  -webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  font-size: 30px;
+}
+.fa-arrow-up:hover {
+  color: #fff;
+  cursor: pointer;
+  opacity: 1;
+}
+/*============    ШРИФТЫ    ===========*/
+/*============    ШРИФТЫ    ===========*/
+/*============    ШРИФТЫ    ===========*/
+/*============    ШРИФТЫ    ===========*/
+/*============    ШРИФТЫ    ===========*/
+/*============    ШРИФТЫ    ===========*/
+/*============    ШРИФТЫ    ===========*/
+/*============    ШРИФТЫ    ===========*/
+/*============    ШРИФТЫ    ===========*/
+/*============    ПОДВАЛ    ===========*/
+/*============    	ВСПЛЫВАЮЩИЕ ОКНА    ===========*/
+/*============    	АДАПТИВ    ===========*/
+@media (min-width: 0px) and (max-width: 319px) {
+  section#plus .pluss hr {
+    width: 10%;
+  }
+  footer .namefooter hr {
+    width: 10%;
+  }
+  #singlet .singlet hr,
+  #dresses .dresses hr,
+  #cardigan .cardigan hr,
+  #sweaters .sweaters hr,
+  #shirts .shirts hr,
+  #news .news hr,
+  #jacket .jacket hr {
+    width: 10%;
+  }
+  .b-top-but {
+    right: -30%;
+  }
+}
+@media (min-width: 320px) and (max-width: 449px) {
+  .main-logo img {
+    height: 70px;
+    width: 70px;
+    margin-top: 10px;
+  }
+  .main-logo p {
+    font-size: 14px;
+    margin-top: -8px;
+    margin-left: 7px;
+  }
+  .main-tel p {
+    font-size: 11px;
+    margin-left: 90px;
+    margin-top: -145px;
+    line-height: 12px;
+    margin-bottom: 3px;
+  }
+  .main-tel p a {
+    font-size: 16px;
+  }
+  .main-time p {
+    margin-left: 90px;
+    margin-top: -4px;
+  }
+  .main-name {
+    right: 0px;
+  }
+  .main-name h1 {
+    font-size: 21px;
+    line-height: 17px;
+    text-align: center;
+    margin-top: -10px;
+    margin-left: 8px;
+  }
+  .main-name p {
+    font-size: 12px;
+    text-align: center;
+    margin-top: -9px;
+  }
+  .main-tel a:before {
+    vertical-align: -33%;
+  }
+  section#main_img {
+    height: 300px;
+    background: url(../img/5551.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin-top: 5px;
+  }
+  .main_fon h2 {
+    margin-left: 55%;
+    margin-top: 30px;
+    line-height: 12px;
+    padding: 4px;
+    -webkit-border-radius: 18px 5px;
+    border-radius: 18px 5px;
+  }
+  .main_fon h2 span {
+    font-size: 13px;
+  }
+  .button {
+    margin-top: 4px;
+    margin-left: 55%;
+  }
+  .btn {
+    padding: 2px;
+    font-size: 12px;
+  }
+  .nav li a {
+    font-size: 16px;
+    padding: 6px 0px 0px 6px;
+  }
+  .nav {
+    padding-left: 12px;
+  }
+  .nav-dropmenu li a {
+    width: 140px;
+    -webkit-transform: translate3d(-3px, -6px, 0px);
+    -moz-transform: translate3d(-3px, -6px, 0px);
+    -ms-transform: translate3d(-3px, -6px, 0px);
+    -o-transform: translate3d(-3px, -6px, 0px);
+    transform: translate3d(-3px, -6px, 0px);
+  }
+  .nav-menu {
+    height: 70px;
+  }
+  section#plus .pluss hr {
+    width: 13%;
+  }
+  footer .namefooter hr {
+    width: 13%;
+  }
+  #singlet .singlet hr,
+  #dresses .dresses hr,
+  #cardigan .cardigan hr,
+  #sweaters .sweaters hr,
+  #shirts .shirts hr,
+  #news .news hr,
+  #jacket .jacket hr {
+    width: 13%;
+  }
+  .b-top-but {
+    right: -19%;
+  }
+}
+@media (min-width: 449px) and (max-width: 480px) {
+  .main-logo img {
+    height: 70px;
+    width: 70px;
+    margin-top: 10px;
+  }
+  .main-logo p {
+    font-size: 14px;
+    margin-top: -8px;
+    margin-left: 7px;
+  }
+  .main-tel p {
+    font-size: 11px;
+    margin-left: 200px;
+    margin-top: -145px;
+    line-height: 12px;
+    margin-bottom: 3px;
+  }
+  .main-tel p a {
+    font-size: 16px;
+  }
+  .main-time p {
+    margin-left: 200px;
+    margin-top: -4px;
+  }
+  .main-name {
+    right: 0px;
+  }
+  .main-name h1 {
+    font-size: 21px;
+    line-height: 17px;
+    text-align: center;
+    margin-top: -10px;
+    margin-left: 8px;
+  }
+  .main-name p {
+    font-size: 12px;
+    text-align: center;
+    margin-top: -9px;
+  }
+  .main-tel a:before {
+    vertical-align: -33%;
+  }
+  section#main_img {
+    height: 235px;
+  }
+  .main_fon h2 {
+    margin-left: 55%;
+    margin-top: 30px;
+    line-height: 12px;
+    padding: 4px;
+    -webkit-border-radius: 18px 5px;
+    border-radius: 18px 5px;
+  }
+  .main_fon h2 span {
+    font-size: 14px;
+  }
+  .button {
+    margin-top: 4px;
+    margin-left: 55%;
+  }
+  .btn {
+    padding: 2px;
+    font-size: 15px;
+  }
+  .nav li a {
+    font-size: 16px;
+    padding: 6px 0px 0px 6px;
+  }
+  .nav {
+    padding-left: 12px;
+  }
+  .nav-dropmenu li a {
+    width: 140px;
+    -webkit-transform: translate3d(-3px, -6px, 0px);
+    -moz-transform: translate3d(-3px, -6px, 0px);
+    -ms-transform: translate3d(-3px, -6px, 0px);
+    -o-transform: translate3d(-3px, -6px, 0px);
+    transform: translate3d(-3px, -6px, 0px);
+  }
+  .nav-menu {
+    height: 35px;
+  }
+  section#plus .pluss hr {
+    width: 20%;
+  }
+  footer .namefooter hr {
+    width: 20%;
+  }
+  #singlet .singlet hr,
+  #dresses .dresses hr,
+  #cardigan .cardigan hr,
+  #sweaters .sweaters hr,
+  #shirts .shirts hr,
+  #news .news hr,
+  #jacket .jacket hr {
+    width: 20%;
+  }
+  .b-top-but {
+    right: -10%;
+  }
+}
+@media (min-width: 481px) and (max-width: 575px) {
+  .main-logo img {
+    height: 70px;
+    width: 70px;
+    margin-top: 15px;
+  }
+  .main-logo p {
+    font-size: 14px;
+    margin-top: -10px;
+    margin-left: 6px;
+  }
+  .main-tel p {
+    margin-top: -145px;
+    text-align: center;
+    font-size: 11px;
+    margin-left: 254px;
+    line-height: 17px;
+  }
+  .main-tel p a {
+    font-size: 15px;
+  }
+  .main-time p {
+    margin-left: 270px;
+    margin-top: -10px;
+  }
+  .main-name {
+    right: 0px;
+  }
+  .main-name h1 {
+    font-size: 20px;
+    line-height: 6px;
+    text-align: center;
+    margin-top: 0px;
+    margin-left: -8px;
+  }
+  .main-name h1 p {
+    font-size: 18px;
+    text-align: center;
+    margin-top: -10px;
+  }
+  .main-name section#plus .pluss hr {
+    width: 20%;
+  }
+  .main-name footer .namefooter hr {
+    width: 20%;
+  }
+  .main-name #singlet .singlet hr,
+  .main-name #dresses .dresses hr,
+  .main-name #cardigan .cardigan hr,
+  .main-name #sweaters .sweaters hr,
+  .main-name #shirts .shirts hr,
+  .main-name #news .news hr,
+  .main-name #jacket .jacket hr {
+    width: 20%;
+  }
+  .main-name .b-top-but {
+    right: -10%;
+  }
+  section#main_img {
+    height: 284px;
+  }
+  .main_fon h2 {
+    margin-left: 55%;
+    margin-top: 30px;
+    line-height: 12px;
+    -webkit-border-radius: 18px 5px;
+    border-radius: 18px 5px;
+    padding: 4px;
+  }
+  .main_fon h2 span {
+    font-size: 17px;
+  }
+  .button {
+    margin-top: 20px;
+    margin-left: 55%;
+  }
+  .btn {
+    padding: 6px;
+    font-size: 15px;
+  }
+  .nav li a {
+    font-size: 16px;
+  }
+  .nav {
+    padding-left: 13px;
+  }
+  .nav-dropmenu li a {
+    width: 140px;
+    -webkit-transform: translate3d(-3px, -6px, 0px);
+    -moz-transform: translate3d(-3px, -6px, 0px);
+    -ms-transform: translate3d(-3px, -6px, 0px);
+    -o-transform: translate3d(-3px, -6px, 0px);
+    transform: translate3d(-3px, -6px, 0px);
+  }
+  section#plus .pluss hr {
+    width: 20%;
+  }
+  footer .namefooter hr {
+    width: 20%;
+  }
+  #singlet .singlet hr,
+  #dresses .dresses hr,
+  #cardigan .cardigan hr,
+  #sweaters .sweaters hr,
+  #shirts .shirts hr,
+  #news .news hr,
+  #jacket .jacket hr {
+    width: 20%;
+  }
+  .b-top-but {
+    right: -8%;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .main-logo img {
+    height: 80px;
+    width: 80px;
+  }
+  .main-logo p {
+    font-size: 14px;
+    margin-top: -10px;
+    margin-left: 11px;
+  }
+  .main-name {
+    right: 13px;
+  }
+  .main-name h1 {
+    font-size: 24px;
+    line-height: 19px;
+    text-align: center;
+  }
+  .main-name h1 p {
+    font-size: 18px;
+    text-align: center;
+    margin-top: -10px;
+  }
+  .main-tel p {
+    text-align: center;
+    font-size: 12px;
+    margin-left: -10px;
+  }
+  .main-tel p a {
+    font-size: 16px;
+  }
+  .main-time p {
+    margin-left: 5px;
+    margin-top: -5px;
+  }
+  section#main_img {
+    height: 284px;
+  }
+  .main_fon h2 {
+    margin-left: 55%;
+    margin-top: 30px;
+    line-height: 12px;
+    -webkit-border-radius: 18px 5px;
+    border-radius: 18px 5px;
+    padding: 4px;
+  }
+  .main_fon h2 span {
+    font-size: 17px;
+  }
+  .button {
+    margin-top: 20px;
+    margin-left: 55%;
+  }
+  .btn {
+    padding: 7px;
+    font-size: 16px;
+  }
+  .nav li a {
+    font-size: 18px;
+  }
+  .nav-dropmenu li a {
+    width: 160px;
+    -webkit-transform: translate3d(-3px, -6px, 0px);
+    -moz-transform: translate3d(-3px, -6px, 0px);
+    -ms-transform: translate3d(-3px, -6px, 0px);
+    -o-transform: translate3d(-3px, -6px, 0px);
+    transform: translate3d(-3px, -6px, 0px);
+  }
+  section#plus .pluss hr {
+    width: 25%;
+  }
+  footer .namefooter hr {
+    width: 25%;
+  }
+  #singlet .singlet hr,
+  #dresses .dresses hr,
+  #cardigan .cardigan hr,
+  #sweaters .sweaters hr,
+  #shirts .shirts hr,
+  #news .news hr,
+  #jacket .jacket hr {
+    width: 25%;
+  }
+  .b-top-but {
+    right: -3%;
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  .main-logo img {
+    height: 80px;
+    width: 80px;
+    padding: 0;
+  }
+  .main-logo p {
+    font-size: 15px;
+    margin-left: 13px;
+    margin-top: -12px;
+  }
+  .main-name {
+    padding: 0;
+    right: -24px;
+  }
+  .main-name h1 {
+    font-size: 30px;
+    line-height: 23px;
+    text-align: center;
+  }
+  .main-name h1 p {
+    margin-top: -6px;
+  }
+  .main-tel p {
+    font-size: 13px;
+    margin-left: 34px;
+    padding: 0;
+  }
+  .main-tel p a {
+    font-size: 18px;
+  }
+  .main-time p {
+    margin-left: 29px;
+    margin-top: -8px;
+  }
+  section#main_img {
+    height: 370px;
+  }
+  .main_fon h2 {
+    margin-left: 55%;
+    margin-top: 45px;
+    line-height: 16px;
+    -webkit-border-radius: 18px 5px;
+    border-radius: 18px 5px;
+    padding: 4px;
+  }
+  .main_fon h2 span {
+    font-size: 20px;
+  }
+  .button {
+    margin-top: 40px;
+    margin-left: 55%;
+  }
+  section#plus .pluss hr {
+    width: 30%;
+  }
+  footer .namefooter hr {
+    width: 30%;
+  }
+  #singlet .singlet hr,
+  #dresses .dresses hr,
+  #cardigan .cardigan hr,
+  #sweaters .sweaters hr,
+  #shirts .shirts hr,
+  #news .news hr,
+  #jacket .jacket hr {
+    width: 30%;
+  }
+  .b-top-but {
+    right: 7%;
+  }
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  .main-logo img {
+    height: 90px;
+    width: 90px;
+  }
+  .main-logo p {
+    font-size: 18px;
+  }
+  .main-name h1 {
+    font-size: 39px;
+  }
+  .main-tel p {
+    font-size: 15px;
+    margin-left: 15px;
+  }
+  .main-tel p a {
+    font-size: 18px;
+  }
+  .main-time p {
+    margin-left: 29px;
+    margin-top: -8px;
+  }
+  section#main_img {
+    height: 480px;
+  }
+  .main_fon h2 {
+    margin-top: 100px;
+    margin-left: 60%;
+    line-height: 25px;
+    padding: 4px;
+    -webkit-border-radius: 18px 5px;
+    border-radius: 18px 5px;
+  }
+  .main_fon h2 span {
+    font-size: 25px;
+  }
+  .button {
+    margin-top: 50px;
+    margin-left: 60%;
+    font-size: 25px;
+  }
+  .main-name p {
+    margin-top: -5px;
+  }
+  section#plus .pluss hr {
+    width: 35%;
+  }
+  footer .namefooter hr {
+    width: 35%;
+  }
+  #singlet .singlet hr,
+  #dresses .dresses hr,
+  #cardigan .cardigan hr,
+  #sweaters .sweaters hr,
+  #shirts .shirts hr,
+  #news .news hr,
+  #jacket .jacket hr {
+    width: 35%;
+  }
+  .b-top-but {
+    right: 10%;
+  }
+}
