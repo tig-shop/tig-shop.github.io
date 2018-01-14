@@ -79,6 +79,11 @@ padding-top: 10px;
 			border-bottom: 1px solid #4D4D4D;
 		}
 }
+li:last-child{
+	padding: 0px 0px;
+display: inline;
+	margin-right: 0px;
+}
 #fon{
 	padding-left: 15px;
 	display: block;
@@ -124,7 +129,6 @@ a:hover{
 	
 	width: 100%;
 	text-align: center;
-	height: 322px;
 	padding-top: 100px;
 	.servic_txt{
 		h6{
@@ -147,13 +151,9 @@ a:hover{
 #video{
 	padding-left: 15px;
 	width: 100%;
-	height: 722px;
 	text-align: center;
 	padding-top: 180px;
 	
-	.video{
-		margin: 0 auto;
-	}
 	.video_text{
 		h6{
 			text-transform: uppercase;
@@ -173,20 +173,13 @@ a:hover{
 #work{
 	padding-top: 100px;
 	width: 100%;
-	height: 423px;
 	text-align: center;
-
-	h6{
-			text-transform: uppercase;
-		font-family: 'Open Sans', sans-serif;
-		font-weight: bold;
-			padding-bottom: 80px;
-			font-size: 30px;
-		}
-		.brand{
-
-			padding-left: 15px;
-a{
+}
+.brand{
+	img{
+		text-align: center;
+	}
+	a{
 	text-transform: uppercase;
 		color: #FFF;
 		font-family: 'Open Sans', sans-serif;
@@ -197,21 +190,31 @@ a{
 		padding: 16px;
 		margin-top: -60px;
 		visibility: hidden;
+		text-align: center;
 
 	}
 }
 .brand:hover{
-	cursor: pointer;
 	a{
+		cursor: pointer;
 		visibility: visible;
 	}
 }
+.recent_work{
+	h6{
+			text-transform: uppercase;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: bold;
+			padding-bottom: 80px;
+			font-size: 30px;
+			text-align: center;
+		}
 }
+
 
 #sub{
 	text-align: center;
 	width: 100%;
-	height: 360px;
 	
 	
 h6{
@@ -221,6 +224,7 @@ h6{
 			padding-top: 100px;
 			padding-bottom: 40px;
 			font-size: 30px;
+			text-align: center;
 		}
 	p{
 		text-align: center;
@@ -241,6 +245,7 @@ h6{
 		height: 50px;
 		padding: 11px;
 		margin-bottom: 90px;
+		text-align: center;
 
 	}
 a:hover{
@@ -250,30 +255,38 @@ a:hover{
 		}
 }
 .sub{
-	margin-top: 200px;
+	margin-top: 100px;
 		background-color: #f5f5f5;
 }
 
 #social{
 	width: 100%;
+	margin-top: 100px;
+	margin-bottom: 100px;
 	
 }
 .soc{
 display: block;
 	margin: 0 auto;
-	height: 170px;
-	margin-top: 200px;
+	text-align: center;
 	
 }
-.icon-facebook, .icon-twitter,.icon-google-plus,.icon-dribbble{
+.icon-twitter,.icon-google-plus,.icon-dribbble{
 	border: 1px solid #4d4d4d;
 	padding: 15px;
 	text-align: center;
 	margin-left: 60px;
 	text-decoration: none;
 	color: #4d4d4d;
-	margin-top: 100px;
 
+}
+.icon-facebook{
+	margin-left: 0px;
+	border: 1px solid #4d4d4d;
+	padding: 15px;
+	text-align: center;
+	text-decoration: none;
+	color: #4d4d4d;
 }
 
 .icon-facebook:before {
@@ -311,7 +324,6 @@ display: block;
 
 footer{
 	width: 100%;
-	height: 350px;
 	background-color: #3B3B3B;
 	color: #fff;
 	p{
@@ -380,25 +392,59 @@ a{
 /*============    	АДАПТИВ    ===========*/
 
 @media(min-width:0px) and (max-width:320px) {
-	
+	.logo{
+		text-align: center;
+	}
+	.icon-twitter,.icon-google-plus,.icon-dribbble{
+		margin-left: 5px;
+}
+#sub a{
+	width: 250px;
+}
+#fon a{
+	width: 250px;
+}
 }
 
 @media(min-width:321px) and (max-width:480px) {
-
+.logo{
+		text-align: center;
+	}
+	.icon-twitter,.icon-google-plus,.icon-dribbble{
+		margin-left: 5px;
+}
 }
 
 @media(min-width:481px) and (max-width:575px) {
-
+.logo{
+		text-align: center;
+	}
+	.brand{
+		a{
+			margin: 13px;
+			margin-top: -74px;
+		}
+	}
+	.menu{
+	margin-left: -8%;
+}
 }
 @media(min-width:576px) and (max-width:768px) {
-
+.logo{
+		text-align: center;
+	}
 }
 @media(min-width:769px) and (max-width:992px) {
-
+.logo{
+		text-align: center;
+	}
 }
 
 @media(min-width:993px) and (max-width:1200px) {
-
+	
+.menu{
+	margin-left: -11%;
+}
 }
 
 

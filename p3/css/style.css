@@ -128,6 +128,11 @@ header {
 .menu a:hover {
   border-bottom: 1px solid #4D4D4D;
 }
+li:last-child {
+  padding: 0px 0px;
+  display: inline;
+  margin-right: 0px;
+}
 #fon {
   padding-left: 15px;
   display: block;
@@ -169,7 +174,6 @@ header {
 #services {
   width: 100%;
   text-align: center;
-  height: 322px;
   padding-top: 100px;
 }
 #services .servic_txt h6 {
@@ -189,12 +193,8 @@ header {
 #video {
   padding-left: 15px;
   width: 100%;
-  height: 722px;
   text-align: center;
   padding-top: 180px;
-}
-#video .video {
-  margin: 0 auto;
 }
 #video .video_text h6 {
   text-transform: uppercase;
@@ -211,20 +211,12 @@ header {
 #work {
   padding-top: 100px;
   width: 100%;
-  height: 423px;
   text-align: center;
 }
-#work h6 {
-  text-transform: uppercase;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: bold;
-  padding-bottom: 80px;
-  font-size: 30px;
+.brand img {
+  text-align: center;
 }
-#work .brand {
-  padding-left: 15px;
-}
-#work .brand a {
+.brand a {
   text-transform: uppercase;
   color: #FFF;
   font-family: 'Open Sans', sans-serif;
@@ -235,17 +227,23 @@ header {
   padding: 16px;
   margin-top: -60px;
   visibility: hidden;
+  text-align: center;
 }
-#work .brand:hover {
+.brand:hover a {
   cursor: pointer;
-}
-#work .brand:hover a {
   visibility: visible;
+}
+.recent_work h6 {
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  padding-bottom: 80px;
+  font-size: 30px;
+  text-align: center;
 }
 #sub {
   text-align: center;
   width: 100%;
-  height: 360px;
 }
 #sub h6 {
   text-transform: uppercase;
@@ -254,6 +252,7 @@ header {
   padding-top: 100px;
   padding-bottom: 40px;
   font-size: 30px;
+  text-align: center;
 }
 #sub p {
   text-align: center;
@@ -274,25 +273,26 @@ header {
   height: 50px;
   padding: 11px;
   margin-bottom: 90px;
+  text-align: center;
 }
 #sub a:hover {
   color: #fff;
   background-color: #4d4d4d;
 }
 .sub {
-  margin-top: 200px;
+  margin-top: 100px;
   background-color: #f5f5f5;
 }
 #social {
   width: 100%;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 .soc {
   display: block;
   margin: 0 auto;
-  height: 170px;
-  margin-top: 200px;
+  text-align: center;
 }
-.icon-facebook,
 .icon-twitter,
 .icon-google-plus,
 .icon-dribbble {
@@ -302,7 +302,14 @@ header {
   margin-left: 60px;
   text-decoration: none;
   color: #4d4d4d;
-  margin-top: 100px;
+}
+.icon-facebook {
+  margin-left: 0px;
+  border: 1px solid #4d4d4d;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  color: #4d4d4d;
 }
 .icon-facebook:before {
   content: "\ea90";
@@ -338,7 +345,6 @@ header {
 }
 footer {
   width: 100%;
-  height: 350px;
   background-color: #3B3B3B;
   color: #fff;
 }
@@ -387,3 +393,56 @@ footer a {
 /*============    ПОДВАЛ    ===========*/
 /*============    	ВСПЛЫВАЮЩИЕ ОКНА    ===========*/
 /*============    	АДАПТИВ    ===========*/
+@media (min-width: 0px) and (max-width: 320px) {
+  .logo {
+    text-align: center;
+  }
+  .icon-twitter,
+  .icon-google-plus,
+  .icon-dribbble {
+    margin-left: 5px;
+  }
+  #sub a {
+    width: 250px;
+  }
+  #fon a {
+    width: 250px;
+  }
+}
+@media (min-width: 321px) and (max-width: 480px) {
+  .logo {
+    text-align: center;
+  }
+  .icon-twitter,
+  .icon-google-plus,
+  .icon-dribbble {
+    margin-left: 5px;
+  }
+}
+@media (min-width: 481px) and (max-width: 575px) {
+  .logo {
+    text-align: center;
+  }
+  .brand a {
+    margin: 13px;
+    margin-top: -74px;
+  }
+  .menu {
+    margin-left: -8%;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .logo {
+    text-align: center;
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  .logo {
+    text-align: center;
+  }
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  .menu {
+    margin-left: -11%;
+  }
+}
