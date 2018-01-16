@@ -460,7 +460,15 @@ font-family: 'PT Sans Caption', sans-serif;
 .slick-active{
  		outline: none;
  		}
+ 		.slick-next{
+ 			right: 0px;
+ 		}
+ 		.slick-prev{
+ 			left: 0px;
+ 		}
 .slick-prev, .slick-next{
+	
+	
  	&:before{
  		font-size: 25px;
  		color: #444444;
@@ -736,26 +744,84 @@ display: inline;
 /*============    	АДАПТИВ    ===========*/
 
 @media(min-width:0px) and (max-width:320px) {
-	
+	.menu li {
+    padding: 0px 0px;
+    margin-right: 8px;
+    display: inline;
+}
 }
 
 @media(min-width:321px) and (max-width:480px) {
-	
+	.menu li {
+    padding: 0px 0px;
+    margin-right: 8px;
+    display: inline;
+}
+.menu ul {
+    margin-left: -26px;
+    list-style: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+.view-first img {
+    transition: all 0.2s linear;
+    width: 300px;
+    height: 200px;
+}
+.view .mask, .view .content {
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+.name h1 {
+    text-transform: uppercase;
+    font-family: 'PR', sans-serif;
+    font-size: 35px;
+    color: #FFF;
+    line-height: 70px;
+}
 }
 
 @media(min-width:481px) and (max-width:575px) {
-	
+	.menu li {
+    padding: 0px 0px;
+    margin-right: 8px;
+    display: inline;
+}
+.menu ul {
+    margin-left: -26px;
+    list-style: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
 }
 @media(min-width:576px) and (max-width:768px) {
-	
+	.menu li {
+    padding: 0px 0px;
+    margin-right: 8px;
+    display: inline;
+}
 
 }
 @media(min-width:769px) and (max-width:992px) {
-
+.menu li {
+    padding: 0px 0px;
+    margin-right: 8px;
+    display: inline;
+}
 }
 
 @media(min-width:993px) and (max-width:1200px) {
-
+.menu li {
+    padding: 0px 0px;
+    margin-right: 8px;
+    display: inline;
+}
 }
 
 
