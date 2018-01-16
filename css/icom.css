@@ -1,0 +1,37 @@
+@font-face {
+  font-family: 'icom';
+  src:  url('../fonts/icom/icomoon.eot?r13i8d');
+  src:  url('../fonts/icom/icomoon.eot?r13i8d#iefix') format('embedded-opentype'),
+    url('../fonts/icom/icomoon.ttf?r13i8d') format('truetype'),
+    url('../fonts/icom/icomoon.woff?r13i8d') format('woff'),
+    url('../fonts/icom/icomoon.svg?r13i8d#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icom' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+    .icon-display, .icon-cog, .icon-users{
+      color: #BD2130;
+}
+.icon-display:before {
+  content: "\e956";
+}
+.icon-users:before {
+  content: "\e972";
+}
+.icon-cog:before {
+  content: "\e994";
+}
