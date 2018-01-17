@@ -718,12 +718,41 @@ display: inline;
 }
 
 
-.btn-primary{
-	display: block;
-	margin: 0 auto;
-text-align: center;	
+
+
+form input, textarea {
+    position: relative;
+    padding: 10px 10px 10px 40px;
+    width: 100%;
+    font-style: italic;
+    border: none;
+    border-bottom: 1px dashed #ddc;
+    background: rgba(230,230,230,0);
+    color: #000;
+    resize: none;
+    font-family: 'PT Sans', sans-serif;
+    transition: 0.3s;
 }
 
+input[type=checkbox]{
+	width: 50px;
+}
+input[type=submit]{
+	display: block;
+	margin: 0 auto;
+	width: 200px;
+	text-align: center;
+	padding: 10px;
+border: 1px solid;
+-webkit-border-radius: 20px;
+        border-radius: 20px;
+	background-color: #AA1E2B;
+	color: #fff;
+&:hover{
+	color: #000;
+	background-color: #fff;
+}
+}
 /*============    ГЛАВНЫЙ ЭКРАН    ===========*/
 
 /*============    ШРИФТЫ    ===========*/
