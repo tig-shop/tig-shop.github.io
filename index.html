@@ -63,8 +63,7 @@
   </section>
 
 
-<!-- Модаль -->
-<<!-- Modal -->
+
 <div class="modal fade" id="modal-1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -72,41 +71,35 @@
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
       </div>
       <div class="modal-body">
-      <form action="/signup" method="POST">
-  <p>
-    <label>Имя</label>
-    <input type="text" name="first_name">
-  </p>
+  <form class="form" method="post" autocomplete="off">
 
-  <p>
-    <label>Email</label>
-    <input type="email" name="email">
-  </p>
-  <p>
-    <label>Телефон</label>
-    <input type="tel" name="phone">
-  </p>
- 
+                        <div><input type="text" name="name" placeholder="Имя" pattern="[А-Яа-яЁёA-Za-z]{3,30}" required=""></div>
 
-  
-  <p>
+                        <div><input type="email" name="mail" placeholder="E-mail" required=""></div>
+
+                        <div><textarea name="message" placeholder="Сообщение" required=""></textarea></div>
+ <p>
     <label>
-      <input type="checkbox" name="terms">
-      Я согласен с <a href="/terms">условиями использования</a>
+      <input type="checkbox" name="terms">	Я согласен с <a href="/terms">условиями использования</a>
     </label>
   </p>
-  <p>
+                        <input type="submit" name="send" value="Отправить">
+
+                    
   
-  </p>
+ 
+ 
 </form>
-      </div>
-      <div class="modal-footer">
-       
-        <button type="button" class="btn btn-primary">Отправить</button>
       </div>
     </div>
   </div>
 </div>
+
+
+                   
+
+
+
 
   <section id="serv">
   <div class="container">
