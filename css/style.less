@@ -51,6 +51,8 @@ header{
 	right: 150px;
 	left: 150px;
 	margin: 0 auto;
+	z-index: 1000;
+	background-color: #FFF;
 }
 .logo{
 	padding-left: 15px;
@@ -105,6 +107,32 @@ li:last-child{
 display: inline;
 	margin-right: 0px;
 }
+
+.show-navPos,
+.show-winPos {
+  position:fixed;
+  
+  color:#fff;
+}
+
+.show-winPos {
+  top:0px;
+}
+
+
+.fixed {
+  position:fixed;
+  top:0;
+  left:0;
+  width: 100%;
+}
+
+.shadow {
+  -webkit-box-shadow: 0px 1px 3px -1px rgba(117,117,117,1);
+   -moz-box-shadow: 0px 1px 3px -1px rgba(117,117,117,1);
+   box-shadow: 0px 1px 3px -1px rgba(117,117,117,1);
+}
+
 #fon{
 	margin: 0 auto;
 	display: block;
