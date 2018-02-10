@@ -55,7 +55,6 @@ header{
 	background-color: #FFF;
 }
 .logo{
-	padding-left: 15px;
 	font-size: 40px;
 	font-family: 'FF', sans-serif;
 	color: #4d4d4d;
@@ -108,12 +107,13 @@ display: inline;
 	margin-right: 0px;
 }
 .navbar {
-	min-height: 120px;
-	border: none;
+	min-height: 100px;
 	border-radius: 0;
-	margin-bottom: -15px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	padding-top: 0px;
 	a{
-		margin-top: 10px;
+		margin-top: 15px;
 		margin-left: 50px;
 	}
 ul{
@@ -142,12 +142,7 @@ display: inline;
 
 }
 
-.navbar-brand {
-	min-width: 186px;
-	height: auto;
-	
-	
-}
+
 
 .navbar-toggler{
 	display: none;
@@ -865,9 +860,19 @@ border: 1px solid;
 /*============    	АДАПТИВ    ===========*/
 
 @media(min-width:0px) and (max-width:320px) {
+	.view-first img {
+    width: 100%;   
+}
 	.wow{
 		animation-name:none
 	}
+	.name h1 {
+    text-transform: uppercase;
+    font-family: PR,sans-serif;
+    font-size: 36px;
+    color: #FFF;
+    line-height: 70px;
+}
 	.menu li {
     padding: 0px 0px;
     margin-right: 8px;
@@ -907,9 +912,28 @@ display: block;
 	}
 }
 }
+.view {
+
+    width: 90%;
+}
+
 }
 
 @media(min-width:321px) and (max-width:480px) {
+	.view-first img {
+    width: 100%;
+}
+	.name h1 {
+    text-transform: uppercase;
+    font-family: PR,sans-serif;
+    font-size: 36px;
+    color: #FFF;
+    line-height: 70px;
+}
+	.view {
+  
+    width: 90%;
+}
 	.navbar ul li a {
     display: block;
     margin: 0 auto;
@@ -1008,9 +1032,7 @@ display: block;
     padding: 7px;
     
 }
-.clone-nav{
-	display: none;
-}
+
 
 }
 
