@@ -24,9 +24,9 @@ $message=htmlspecialchars($message);
 // адрес почты куда придет письмо
 $address="24navo@gmail.com";
 // текст письма 
-$note_text="Тема : $urok \r\nИмя : $name1 \r\n Email : $email1 \r\n Дополнительная информация : $text";
+$note_text="Тема : $urok \r\nИмя : $name \r\n Email : $email \r\n Дополнительная информация : $message";
 
-if (isset($name1)  &&  isset ($sab) ) {
+if (isset($name)  &&  isset ($send) ) {
 mail($address,$urok,$note_text,"Content-type:text/plain; windows-1251"); 
 // сообщение после отправки формы
 echo "<p style='color:#009900;'>Уважаемый(ая) <b>$name</b> Ваше письмо отправленно успешно. <br> Спасибо. <br>Вам скоро ответят на почту <b> $email</b>.</p>";
