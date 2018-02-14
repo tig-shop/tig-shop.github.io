@@ -1,7 +1,6 @@
 
 <meta charset="utf-8"> 
 <?php
-$urok="Урок 22";
 error_reporting( E_ERROR );   //Отключение предупреждений и нотайсов (warning и notice) на сайте
 // создание переменных из полей формы		
 if (isset($_POST['name']))			{$name			= $_POST['name'];		if ($name == '')	{unset($name);}}
@@ -24,12 +23,12 @@ $message=htmlspecialchars($message);
 // адрес почты куда придет письмо
 $address="vwpolik@mail.ru";
 // текст письма 
-$note_text="Тема : $urok \r\nИмя : $name \r\n Email : $mail \r\n Дополнительная информация : $message";
+$note_text="Имя: $name <br> Email: $mail <br> Сообщение: $message";
 
 if (isset($name)  &&  isset ($send) ) {
-mail($address,$urok,$note_text,"Content-type:text/plain; windows-1251"); 
+mail($address,$urok,$note_text,"Content-type: text/html; charset=UTF-8"); 
 // сообщение после отправки формы
-echo "<p style='color:#009900;'>Уважаемый(ая) <b>$name</b> Ваше письмо отправленно успешно. <br> Спасибо. <br>Вам скоро ответят на почту <b> $mail</b>.</p>";
+echo "<p style='text-align:center'>Уважаемый(ая) <b>$name</b> Ваше письмо отправленно успешно. <br> Спасибо. <br>Вам скоро ответят на почту <b> $mail</b>.</p>";
 }
 
 ?>
