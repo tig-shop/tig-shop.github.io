@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <title>С Днем Рождения!</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  </head>
+  <body>
+   <!--новинки-->
+<header id="main">
+     <div class="container">
+       <div class="row main-head">  
+         <div class="pond"></div>
+<div class="col-lg-12  col-sm-12 col-xs-12 col-md-12 main-name">
+  <h1>С 8 <span>марта!</span></h1> 
+</div>
+    <div class="col-lg-6 col-sm-6 col-xs-6 col-md-6 main-name1">
+      <a href="#" target="_blank"><img class="image" src="img/bab.jpg" alt="1"><p>Шурик</p></a>
+      
+    </div>
+      <div class="col-lg-6  col-sm-6 col-xs-6 col-md-6 main-name1">
+        <a href="https://ok.ru/profile/421715812293" target="_blank"><img class="image" src="img/ma.jpg" alt="Ma"><p>Азгануш</p></a>
+          
+      </div>
+        <div class="col-lg-6 col-sm-6 col-xs-6 col-md-6 main-name1">
+      <a href="https://vk.com/id327129640" target="_blank"><img class="image" src="img/t.jpg" alt="1"><p>Татевик</p></a>
+      
+    </div>
+      <div class="col-lg-6  col-sm-6 col-xs-6 col-md-6 main-name1">
+        <a href="https://vk.com/id94531375" target="_blank"><img class="image" src="img/mr.jpg" alt="Ma"><p>Мариам</p></a>
+          
+      </div>
+    </div>
+  </div>
+  <audio src="audio/2.mp3" autoplay="autoplay"></audio>
+</header>
+
+
+
+
+
+
+<div id="tigr">
+  <div class="container">
+    <div class="row main-head">
+     <div class="col-lg-12  col-sm-12 col-xs-12 col-md-12 main-name">
+       <div id="card">
+          <p>Дорогие женщины, поздравляем вас с Международным женским днем!&hearts;
+            <br>  Желаем вам тепла и любви в сердцах, замечательного настроения и прекрасного самочувствия. Будьте красивы, счастливы, дарите улыбки, радуйтесь и получайте замечательные впечатления. Вы очаровательны! С праздником! &hearts;</p>
+          <p>Vardan and Tigran <img class="tigr" src="img/tigr.png" alt="tigr"></p>
+        </div>
+      </div>  
+
+
+    
+    <div class="col-lg-12  col-sm-12 col-xs-12 col-md-12 main-name2">
+  <div class="surp">
+    <h2 class="wow tada"><a href="video.html">Сюрприз<img src="img/a.png" width="50" height="50" alt="1"></a></h2>
+</div>
+</div>
+    </div>
+  </div>
+</div>
+    
+<!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/style.css">
+            <link rel="stylesheet" href="css/animate.css">
+          <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+
+<script src="js/jquery-3.2.1.min.js"></script>
+   <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+        <script src="slick/slick.min.js"></script> <!-- 16 KB -->
+<script src="js/wow.min.js"></script>
+
+<script>
+  new WOW().init();
+</script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+<script>
+  var STARTING_FISH_COUNT = 10;
+
+// globals
+var $count, $pond, pondWidth, pondHeight;
+
+// on document ready
+$(function() {
+  // setup
+  $count = $('.count');
+  $pond = $('.pond');
+  determinePondSize();
+  
+  // events
+  $(window).on('resize', determinePondSize);
+  $pond.on('click', stirPond);
+  
+  // fill the pond
+  spawnStartingFish();
+});
+
+function determinePondSize() {
+  pondWidth = $pond.width();
+  pondHeight = $pond.height();
+}  
+
+function spawnStartingFish() {
+  for (var i = 0; i < STARTING_FISH_COUNT; i++) {
+    spawnFish(getRandom(pondWidth), getRandom(pondHeight));
+  }
+}
+
+function stirPond(event) {
+  spawnFish(event.clientX, event.clientY);
+}
+
+function spawnFish(x, y) {
+  // setup fish
+  var $fish = $('<div class="fish"><div class="fish-bob"><div class="fish-direction"><div class="fish-body"></div></div></div></div>');
+  var colors = [1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 4];
+  $fish.addClass('fish-' + colors[Math.floor(getRandom(15))]);
+  if (getRandom(2) < 1) {
+    $fish.addClass('fish-flip');
+  }
+  $fish.find('.fish-bob').css('animation-delay', '-' + getRandom(7) + 's');
+  $fish.find('.fish-body').on('click', pokeFish.bind(this, $fish));
+  positionFish($fish, x, y);
+  
+  // let fish go
+  $pond.append($fish);
+  setTimeout(doFishyThings.bind(this, $fish), getRandom(10000))
+  $count.text($('.fish').length);
+}
+
+function pokeFish($fish) {
+  $fish.toggleClass('fish-spin');
+  return false;
+}
+
+function doFishyThings($fish) {
+  blowBubble($fish);
+  moveFish($fish);
+  
+  var timeout = $fish.data('timeout');
+  clearTimeout(timeout);
+  timeout = setTimeout(doFishyThings.bind(this, $fish), 10000 + getRandom(6000));
+  $fish.data('timeout', timeout);
+}
+
+function blowBubble($fish) {
+  var $bubble = $('<div class="bubble">');
+  if ($fish.hasClass('fish-flip')) {
+    $bubble.addClass('bubble-flip');
+  }
+
+  var x = $fish.data('x');
+  var y = $fish.data('y');
+  $bubble.css({ top: y + 'px', left: x + 'px' });
+
+  $pond.prepend($bubble);
+  setTimeout(popBubble.bind(this, $bubble), 4000);
+}
+
+function moveFish($fish) {
+  var x = getRandom(pondWidth);
+  var y = getRandom(pondHeight);
+  
+  if (x < $fish.data('x')) {
+    $fish.addClass('fish-flip');
+  } else {
+    $fish.removeClass('fish-flip');
+  }
+  positionFish($fish, x, y);
+}
+
+function positionFish($fish, x, y) {
+  $fish
+    .css('transform', 'translate(' + x + 'px, ' + y + 'px)')
+    .data('x', x)
+    .data('y', y); 
+}
+
+function popBubble($bubble) {
+  $bubble.remove();
+}
+
+function getRandom(upper) {
+  return Math.random() * upper;
+}
+</script>
+  </body>
+</html>
